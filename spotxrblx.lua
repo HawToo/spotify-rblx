@@ -1,4 +1,4 @@
-``` luau
+
 local Radius = 30
 local Prefix = "/"
 
@@ -167,4 +167,3 @@ Players.PlayerAdded:connect(function(plr)
         ProcessCommand(plr, msg)
     end)
 end)
-```
