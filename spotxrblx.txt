@@ -1,4 +1,4 @@
-```lua
+``` luau
 local Radius = 30
 local Prefix = "/"
 
