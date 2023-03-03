@@ -2,6 +2,12 @@
 local Radius = 30
 local Prefix = "/"
 
+if (not APIKey) then 
+    game.Players.LocalPlayer:Kick("API Key not detected! Did you follow instructions correctly?") 
+end
+
+
+
 if not game.Loaded then game.Loaded:Wait() end
 
 
