@@ -15,7 +15,7 @@ To start, Click [here](https://developer.spotify.com/console/get-users-currently
 
 Tick the boxes shown below, and press "Request Token"
 
-user-read-currently-playingn
+user-read-currently-playing
 
 user-read-playback-position
 
