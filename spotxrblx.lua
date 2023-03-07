@@ -1,12 +1,5 @@
-
 local Radius = 30
 local Prefix = "/"
-
-if (not APIKey) then 
-    game.Players.LocalPlayer:Kick("API Key not detected! Did you follow instructions correctly?") 
-end
-
-
 
 if not game.Loaded then game.Loaded:Wait() end
 
@@ -56,6 +49,7 @@ local GetFullName = function(Name)
         end
     end
 end
+
 
 local searchSongs = function(query, limit)
     local resp = Request(
@@ -144,8 +138,8 @@ local Commands = {
                 print("User not found")
                 return
             end
-            Blacklist[User] = not Blacklist[User]
-            print("Player " .. User .. (Blacklist[User] and " blacklisted" or " unblacklisted"))
+            table.find(Blacklist, User) = not table.find(Blacklist, User)
+            print("Player " .. User .. (table.find(Blacklist, User) and " blacklisted" or " unblacklisted"))
         end
     end
 }
