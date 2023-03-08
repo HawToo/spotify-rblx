@@ -96,7 +96,7 @@ end
 local song = searchSongs("holocaust", 1)
 addSong(song)
 syn.request(requests["NextSong"])
-]]
+]]--
 
 local Commands = {
     play = function(speaker, arguments)
